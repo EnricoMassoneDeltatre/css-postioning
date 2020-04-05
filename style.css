@@ -33,7 +33,7 @@ button {
 }
 
 .modal {
-  display: block;
+  display: none;
 }
 
 .modal-backdrop {
@@ -53,4 +53,9 @@ button {
   left: 20%;
   background-color: #fff;
   padding: 2em 3em;
+  overflow: auto;
+}
+
+.modal-close {
+  cursor: pointer;
 }

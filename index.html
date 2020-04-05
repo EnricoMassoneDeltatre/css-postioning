@@ -11,15 +11,15 @@
       <div class="top-banner-inner">
         <p>
           Find out what's going on at Wombat Coffee each month. Sign up for our
-          newsletter: <button>Sign up</button>
+          newsletter: <button id="open-modal-button">Sign up</button>
         </p>
       </div>
     </header>
 
-    <div class="modal">
+    <div class="modal" id="modal-container">
       <div class="modal-backdrop"></div>
       <div class="modal-body">
-        <button>close</button>
+        <button class="modal-close" id="close-modal-button">close</button>
         <h2>Wombat Newsletter</h2>
         <p>Sign up for our monthly newsletter. No spam. We promise!</p>
         <form id="sign-up-form">
@@ -36,8 +36,23 @@
 
     <script type="text/javascript">
       const form = document.getElementById("sign-up-form");
+
       form.addEventListener("submit", function (event) {
         event.preventDefault();
+      });
+
+      const openModalButton = document.getElementById("open-modal-button");
+      const closeModalButton = document.getElementById("close-modal-button");
+      const modalContainer = document.getElementById("modal-container");
+
+      openModalButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        modalContainer.style.display = "block";
+      });
+
+      closeModalButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        modalContainer.style.display = "none";
       });
     </script>
   </body>
