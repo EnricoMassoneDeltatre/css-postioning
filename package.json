@@ -1,0 +1,22 @@
+{
+  "name": "css-postioning",
+  "version": "1.0.0",
+  "description": "Sample page showing the available positioning in CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnricoMassoneDeltatre/css-postioning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnricoMassoneDeltatre/css-postioning/issues"
+  },
+  "homepage": "https://github.com/EnricoMassoneDeltatre/css-postioning#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
